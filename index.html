@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rootz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./JS/logic.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <nav><img alt="logo" src="./img/logo-colors.png" /></nav>
+    <section class="container">
+        <div class="sidebar">
+            <div class='location'>
+                <input class="distanceNumber" placeholder="Distance">
+                <select class="distanceType">
+                    <option value="km" selected='true'>km</option>
+                    <option value="mi">mi</option>
+                </select>
+            </div>
+            <div class='distance'>
+                <input type="checkbox" name="wantGroup" value="wantGroup"> I want to be joined !<br>
+            </div>
+            <div class='location'>
+                <select class="distanceType">
+                    <option value="monuments" selected='true'>Monuments</option>
+                    <option value="random">Random</option>
+                </select>
+            </div>
+            <button id="run">RUN</button>
+            <button id="runners">RUNNERS</button>
+            <button id="clean">Clean Map</button>
+            <!-- <button id="hot" onclick="runHotMap()">HOT</button> -->
+
+        </div>
+        <div class="main">
+            <div id='map'></div>
+            <!-- <h1>Welcome to our app</h1> -->
+        </div>
+    </section>
+    <footer></footer>
+    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC2bZupcLZVkocxnBe7IwQ8slOA_OsWfZE&callback=initMap'></script>
+</body>
+
+</html>

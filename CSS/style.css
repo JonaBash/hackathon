@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+nav{
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav img {
+    height: 50px;
+    clip: rect(0px,60px,200px,0px);
+}
+button {
+    margin: 5px 0;
+    background-color: white; /* Green */
+    border: none;
+    color: gray;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+button:hover {
+    background-color: #74C2E8;
+}
+
+section.container {
+    position: relative;
+    display: flex;
+    height: 90vh;
+    
+}
+.sidebar {
+    width: 300px;
+    padding: 15px;
+    background-color:#74E8A8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a {
+    position: absolute;
+    bottom: 3vw;
+    left: 3.5vw;
+    text-decoration: none;
+    margin: 2vw;
+    padding: 2px 33px;
+    color: white;
+    border: 1px solid white;
+}
+.sidebar a:hover {
+    background-color: #74C2E8;
+}
+.sidebar div {
+    margin: 20px;
+
+}
+
+.distanceNumber {
+    width: 65%;
+}
+.main {
+    padding: 15px;
+    width: 100%;
+    background-color: #fbfbfb;
+}
+#map {
+    height: 80vh;
+    width: 70vw;
+}
+footer {
+    height: 70px;
+    background-color:#74C2E8;
+}
+
+
+/* HOME PAGE  */
+
+section.containerHome {
+    position: relative;
+    display: flex;
+    min-height: 90vh;
+}
+
+.sidebarLogin {
+    width: 20vw;
+    padding: 15px;
+    background-color:#74E8A8;
+    color: white;
+}
+.sidebarLogin h2, p {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.mainHome {
+    padding: 15px 15px 100px 15px;
+    width: 80vw;
+    background-color: #74C2E8;
+    background-image: url(../img/background.png);
+    background-position: bottom;
+    background-size: 80vw;
+    background-repeat: no-repeat;
+}
+
+.mainHome h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.mainHome h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+.textHome {
+    margin-left: 25vw;
+    margin-top: 2%;
+}
+
+.form {
+    position: fixed;
+    top: 200px;
+}
+
+
+/* ACCOUNT PAGE  */
+.containerAcc {
+    position: relative;
+    display: flex;
+    height: 75vh;
+}
+.mainAcc {
+    padding: 15px 15px 100px 15px;
+    width: 60vw;
+    background-color: #74C2E8;
+    background-image: url(../img/tel_Aviv.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sidebarLeft {
+    width: 20vw;
+    padding: 15px;
+    background-color:#74E8A8;
+    color: white;
+}
+
+.sidebarRight {
+    width: 20vw;
+    padding: 15px;
+    background-color:#74E8A8;
+    color: white;
+}
+
+
+.sidebarLeft a {
+    position: absolute;
+    bottom: 3vw;
+    left: 3.5vw;
+    text-decoration: none;
+    margin: 2vw;
+    padding: 2px 33px;
+    color: white;
+    border: 1px solid white;
+}
+.sidebarLeft a:hover {
+    background-color: #74C2E8;
+}
+.stars {
+    display: flex;
+    align-items: center;
+}
+.stars img {
+    height: 40px;
+}
+footer.accFooter {
+    height: 17vh;
+}
+.underProg {
+    opacity: 0.5;
+}
+footer img {
+    height: 17vh;
+}
+
+.gm-style-iw {
+    color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+
+    section.containerHome {
+        flex-direction: column-reverse;
+    }
+
+    .sidebarLogin {
+        order: 0;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .form {
+        position: relative;
+        top: 0;
+    }
+
+    .mainHome {
+        padding: 15px 25px 45% 15px;
+        width: 100vw;
+        min-height: 80vh;
+        background-size: contain;
+    }
+
+    .textHome {
+        margin-left: 0;
+    }
+}
